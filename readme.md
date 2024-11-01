@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script language="JavaScript">
-<!--
-var dir_images = './images/';
-
-function change_it(what_file) {
-    var file_extension = ".png";
-    document.photo.src = what_file + file_extension;
-} 
-
-function default_img() {
-    document.photo.src = dir_images + "d.png";
-}
-//-->
-</script>
-</head>
-<body>
-
-<p>Here are the files: 
-<a href="http://" onMouseOver="change_it(dir_images + 'c')" onMouseOut="default_img()">YAML</a>, 
-<a href="http://" onMouseOver="change_it(dir_images + 'a')" onMouseOut="default_img()">SQL</a>, 
-<a href="http://" onMouseOver="change_it(dir_images + 'b')" onMouseOut="default_img()">JSON</a>
-<a href="http://" onMouseOver="change_it(dir_images + 'e')" onMouseOut="default_img()">CSV</a>
-</p>
-
-<img src="./images/d.png" width="190" height="200" name="photo">
-
-
 <pre>
 As we extend the porting of CSV to SQL and back (refer: <a href="https://github.com/ursa-mikail/sql_csv_porting">sql_csv_porting</a>), we illustrate data porting with CSV, YAML, and JSON as well.
 
@@ -60,6 +30,3 @@ For YAML and JSON, read from ./sample_data/data/ and convert back to CSV.
         └── yaml_to_csv.csv
 
 </pre>
-
-</body>
-</html>
