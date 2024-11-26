@@ -5,12 +5,14 @@ This project demonstrates an end-to-end process for generating random data, comp
 
 ## Message Structure
 
+<pre>
 message Item (   
   Bytes    key,
   Bytes    value,
   Metadata metadata,
   Hex  chunk
 )
+</pre>
 
 The message struct is generated in yaml, then translated to a csv (retaining the fields: id_hash_sha256, key, value, meta,  hex).
 
@@ -18,5 +20,5 @@ The csv is piped (importable) to sql.
 A search based on the hash keys are conducted, then exported (exportable) to another csv.
 
 
-yaml file convert to csv inserted to sql and exported out to csv
+yaml file converted to csv, then inserted to sql, and exported out to csv:
 ![csv](csv_sql_export_csv.png)
